@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Div } from 'glamorous'
 
 class BlogPostRoute extends React.Component {
 	render() {
@@ -11,7 +12,7 @@ class BlogPostRoute extends React.Component {
 					<h1>{post.frontmatter.title}</h1>
 				</header>
 
-				<div dangerouslySetInnerHTML={{ __html: post.html }} className="post" />
+				<Div dangerouslySetInnerHTML={{ __html: post.html }} maxWidth="1000px" />
 			</div>
 		)
 	}

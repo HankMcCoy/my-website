@@ -6,10 +6,10 @@ const IndexPage = ({ data }) => {
 	return (
 		<div>
 			<h1>Posts</h1>
-			<p>We got posts! Check 'em out here:</p>
+			<p>We got posts! Check em out here:</p>
 			<ul>
 				{posts.map(({ node: { fields, frontmatter } }) => (
-					<li>
+					<li key={fields.slug}>
 						<Link to={fields.slug}>{frontmatter.title}</Link>
 						<br />
 						{frontmatter.excerpt}

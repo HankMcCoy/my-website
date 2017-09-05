@@ -74,18 +74,18 @@ const SideBar = () => (
 )
 
 const TemplateWrapper = ({ children }) => (
-	<Div display="flex" height="100%">
+	<Div display="flex" minHeight="100%">
 		<Helmet
-			title="Gatsby Default Starter"
+			title="Thomas Beirne"
 			meta={[
 				{ name: 'description', content: 'Sample' },
 				{ name: 'keywords', content: 'sample, something' },
 			]}
 		/>
-		<Div flex="1 0 0%" padding="20px 60px">
+		<Div marginRight="380px" padding="20px 60px">
 			{children()}
 		</Div>
-		<Div flex="0 0 390px">
+		<Div position="fixed" top="0" right="0" bottom="0" width="380px">
 			<SideBar />
 		</Div>
 	</Div>

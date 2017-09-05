@@ -4,6 +4,8 @@ body {
 	font-size: 18px;
 }
 
+Html, body, #___gatsby { height: 100% }
+
 body * {
 	box-sizing: border-box;
 }
